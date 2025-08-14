@@ -1,3 +1,5 @@
+// src/types/weather.ts
+
 export interface WeatherData {
   lat: number;
   lon: number;
