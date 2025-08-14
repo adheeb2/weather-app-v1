@@ -7,7 +7,7 @@ import {
   CloudDrizzle,
   Eye,
   CloudLightning
-} from 'lucide-';
+} from 'lucide-react';
 
 export const getWeatherIcon = (iconCode: string) => {
   const iconMap: Record<string, any> = {
