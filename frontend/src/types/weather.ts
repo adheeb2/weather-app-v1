@@ -1,6 +1,4 @@
-// src/types/weather.ts
-
-export interface WeatherData {
+export type WeatherData = {
   lat: number;
   lon: number;
   tz: string;
@@ -8,17 +6,17 @@ export interface WeatherData {
   units: string;
   weather_overview: string;
   forecast_5_days: ForecastDay[];
-}
+};
 
-export interface ForecastDay {
+export type ForecastDay = {
   date: string;
   temp_min: number;
   temp_max: number;
   weather: string;
   icon: string;
-}
+};
 
-export interface LocationCoords {
+export type LocationCoords = {
   latitude: number;
   longitude: number;
-}
+};
