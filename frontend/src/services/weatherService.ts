@@ -2,7 +2,7 @@ import axios from 'axios';
 // import { WeatherData } from '../types/weather';
 // import type {WeatherData} from '../types/weather';
 // import type { LocationCoords } from '../types/weather';
-import type { WeatherData, LocationCoords } from '../types/weather.ts';
+import type { WeatherData} from '../types/weather.ts';
 
 
 const API_BASE_URL = 'http://localhost:3000/weather';
