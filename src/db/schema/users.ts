@@ -7,7 +7,6 @@ import {
   timestamp,
   uuid,
 } from 'drizzle-orm/pg-core';
-import { nanoid } from 'nanoid';
 
 // Locations Table
 // --------------------
