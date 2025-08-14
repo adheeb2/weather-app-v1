@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { LocationCoords } from '../types/weather';
+import type { LocationCoords } from '../types/weather';
 
 interface GeolocationState {
   coords: LocationCoords | null;

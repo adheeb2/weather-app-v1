@@ -1,5 +1,6 @@
 import axios from 'axios';
-import { WeatherData, LocationCoords } from '../types/weather';
+import { WeatherData } from '../types/weather';
+import type { LocationCoords } from '../types/weather';
 
 const API_BASE_URL = 'http://localhost:3000/weather';
 
