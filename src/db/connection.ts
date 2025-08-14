@@ -5,6 +5,9 @@ import { Database } from '../types';
 
 export function getDatabaseConnection(connectionString: string): Database {
   const pool = new Pool({ connectionString });
-  const db = drizzle({ client: pool, schema });
+  const db = drizzle({ client: pool, schema }) as Database;
   return db;
 }
+
+// const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+// export const db: Database = drizzle({ client: pool, schema }) as Database;

@@ -1,6 +1,9 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { weather_queries, locations } from './db/schema';
 import axios from 'axios';
+// import { db } from './db/connection';
+import { eq } from 'drizzle-orm';
 
 @Injectable()
 export class AppService {
@@ -75,4 +78,23 @@ export class AppService {
       );
     }
   }
+  // async createWeather(
+  //   locationName: string,
+  //   start_date: string,
+  //   end_date: string,
+  // ) {
+  //   const weatherData = await this.getWeather(locationName);
+
+  //   let location = await db
+  //     .select()
+  //     .from(locations)
+  //     .where(eq(locations.name, locationName));
+  //   if (!location) {
+  //     const [newLocation] = await db
+  //       .insert(locations)
+  //       .values({ name: locationName })
+  //       .returning();
+  //     location = newLocation;
+  //   }
+  // }
 }
